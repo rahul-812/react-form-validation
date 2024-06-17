@@ -1,0 +1,57 @@
+#signup-page {
+    background-color: #FFC5A4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #dfdfdf;
+}
+
+#signup-popup {
+    display: flex;
+    position: relative;
+    width: 85vw;
+    height: 90vh;
+    border-radius: 20px;
+    background-color: #242424;
+    box-shadow: 26px 25px 36px #1b252a66;
+    animation: popup-animation 500ms ease-out;
+    overflow: hidden;
+}
+
+#image-container {
+    width: 25rem;
+    height: 94%;
+    margin-left: 3rem;
+    align-self: self-end;
+    border-top-left-radius: 12rem;
+    border-top-right-radius: 12rem;
+    background-image: url('../../images/person_bike.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#red-star {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#blue-star {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#semicircle {
+    position: absolute;
+    top: 0;
+    width: 30rem;
+}
+
+@keyframes popup-animation {
+    from { scale: 0.7; opacity: 0; transform: translatey(-200px);}
+    to { scale: 1; opacity: 1; transform: translateY(0px);}
+}
