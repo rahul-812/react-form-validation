@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+## Screenshots
+
+![Screenshot (8)](https://github.com/rahul-812/react-form-validation/assets/85408038/aa6375a3-feb4-447a-8727-23f44c929d5e)
+![Screenshot (5)](https://github.com/rahul-812/react-form-validation/assets/85408038/15665d3b-7b1c-4a92-a38d-c52fd3c8d6d5)
+![Screenshot (6)](https://github.com/rahul-812/react-form-validation/assets/85408038/c24f6b41-5d82-4d40-adff-57cd1183a850)
+
+
+# Getting Starte
+d with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
