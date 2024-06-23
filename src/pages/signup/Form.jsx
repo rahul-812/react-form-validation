@@ -60,7 +60,7 @@ function FirstForm({ onNext }) {
     function validate() {
         // validating fields
         const err = {
-            uname: authdata.username.match(/^[a-zA-Z]{3}[^s@-_.]{1,17}$/) ? '' : 'Username must start with atleast 3 alphabets but less than 20 characters',
+            uname: authdata.username.match(/^[a-zA-Z]{3}[^s]{1,17}$/) ? '' : 'Username must start with atleast 3 alphabets but less than 20 characters',
             email: authdata.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/) ? '' : 'Invalid email format (must be like user@example.com)',
             pass: authdata.password.length > 15
                 ? 'Password must be less than 16 characters': authdata.password.length < 6? 'Password must be more than 6 characters': ''
@@ -276,14 +276,14 @@ function AdditionalForm() {
             {/* Render PAN number input field */}
             <div id="pan-number" className="form-input">
                 <label htmlFor="pan">PAN number</label>
-                <input type="text" id="pan" value={userData.pan} onChange={onChange} />
+                <input type="text" id="pan" placeholder='10 digit PAN number' value={userData.pan} onChange={onChange}/>
                 {errors.pan && <p className="error-msg">{errors.pan}</p>}
             </div>
 
             {/* Render Aadhar number input field */}
             <div id="aadhar-number" className="form-input">
                 <label htmlFor="aadhar">Aadhar number</label>
-                <input type="text" id="aadhar" value={userData.aadhar} onChange={onChange} />
+                <input type="text" id="aadhar" placeholder='12 digit aadhar number' value={userData.aadhar} onChange={onChange} />
                 {errors.aadhar && <p className="error-msg">{errors.aadhar}</p>}
             </div>
 
